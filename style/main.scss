@@ -1,0 +1,68 @@
+body,
+html {
+  background: rgb(34, 34, 34);
+  color: #fff;
+  font-family: sans-serif;
+}
+
+h1,
+h3 {
+  font-weight: normal;
+}
+
+hr {
+  border: none;
+  border-top: solid thin #fff;
+  opacity: 0.3;
+  margin: 2em 0;
+}
+
+label {
+  margin-right: 2em;
+  input {
+    margin-left: 0.5em;
+  }
+}
+
+.wrapper {
+  margin-top: 1em;
+
+  .sub-component-wrapper {
+    margin-right: 4em;
+    display: flex;
+    font-size: 0.8em;
+
+    .sub-component {
+      padding: 1em 2em;
+      padding-right: 0.2em;
+      padding-top: 0;
+      border-left: solid thin rgba(255, 255, 255, 0.3);
+      border-bottom: solid thin rgba(255, 255, 255, 0.3);
+
+      .component {
+        display: flex;
+
+        .desc {
+          display: block;
+          margin-right: 0.3em;
+          padding-top: 0.3em;
+        }
+        .action {
+          padding-right: 1em;
+        }
+        h3,
+        p {
+          margin: 0;
+          display: block;
+          white-space: nowrap;
+        }
+        input {
+          margin: 0.3em 0;
+        }
+        .faded {
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+}
